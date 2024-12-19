@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellipse Face</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Define a helper function for ellipses
+        function ellipse(x, y, width, height) {
+            ctx.beginPath();
+            ctx.ellipse(x, y, width / 2, height / 2, 0, 0, 2 * Math.PI);
+            ctx.stroke();
+        }
+
+        // Your Khan Academy Code:
+        ellipse(150, 130, 200, 250);
+        ellipse(150, 210, 75, 25);
+        ellipse(95, 111, 50, 20);
+        ellipse(205, 111, 50, 20);
+        ellipse(40, 130, 20, 50);
+        ellipse(260, 130, 20, 50);
+        ellipse(150, 150, 13, 50);
+        ellipse(150, 175, 25, 7);
+        ellipse(95, 100, 30, 4);
+        ellipse(205, 100, 30, 4);
+        ellipse(150, 207, 75, 10);
+        ellipse(150, 70, 230, 10);
+        ellipse(150, 30, 190, 70);
+        ellipse(70, 52, 30, 30);
+        ellipse(230, 52, 30, 30);
+        ellipse(95, 111, 20, 20);
+        ellipse(205, 111, 20, 20);
+    </script>
+</body>
+</html>
